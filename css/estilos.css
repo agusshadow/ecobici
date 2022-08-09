@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#botonArriba {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.logo {
+    background-image: url(../imagenes/iconografia/logo.svg);
+    background-size: 45px;
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: 45px;
+}
+
+.overlay {
+    z-index: -1;
+}
+
+.video-contenedor{
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+.video-contenedor video{
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    transform: translate(-50%,-50%);
+}
+
+.beneficios {
+    background-color: #eaf5e0;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+.card:hover {
+    background-color: #448f6c;
+    cursor: pointer;
+    transition: 0.30s all;
+}
+
+.card:hover h3 {
+    color: white;
+}
+
+.card:hover p {
+    color: white;
+}
+
+textarea {
+    resize: none;
+}
+
+.fondo-pasto {
+    background-image: url(../imagenes/pasto.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: #d1ecb7;
+}
+
+.logo-footer {
+    background-image: url(../imagenes/iconografia/logo.svg);
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: 40px;
+}
+
+svg {
+    fill: #006633;
+    width: 25px;
+    height: 25px;
+}
+
+@media (min-width: 800px) {
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p, li {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    section {
+        margin-bottom: 80px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .logo-footer {
+        background-size: 50px;
+        width: 50px;
+        height: 50px;
+        text-indent: 50px;
+    }
+
+    svg {
+        width: 35px;
+        height: 35px;
+    }
+}
